@@ -1,0 +1,16 @@
+.form-product {
+    .multiselect__tags {
+        border-radius: .25rem;
+        font-size: 1rem;
+        font-weight: 400;
+        height: calc(1.5em + .75rem + 2px);
+        line-height: 1.5;
+        padding: .5rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        width: 100%;
+    }
+
+    .multiselect__placeholder {
+        padding-top: 0;
+    }
+}

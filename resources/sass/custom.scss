@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.logo {
+    background: url('/images/logo.png');
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-top {
+    border-bottom: none !important;
+    border-top: none !important;
+    padding: 0.25rem 0;
+}
+
+.content {
+    width: 90%;
+    border-top: none !important;
+    margin-bottom: 3rem;
+}
+
+.category-show {
+    .card {
+        border: 1px solid #ccc;
+
+        .image {
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+
+            img {
+                max-height: 100%; 
+                max-width: 100%;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.product-show {
+    .card {
+        border: none;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-top {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        > div {
+            margin-bottom: 0.75rem;
+            margin-right: 0 !important;
+        }
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .product-show {
+        .image {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
