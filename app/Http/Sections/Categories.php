@@ -84,12 +84,6 @@ class Categories extends Section implements Initializable
                     $query->orderBy('created_at', $direction);
                 }),
             AdminColumn::text('slug', 'Метка (slug)'),
-            AdminColumn::text('created_at', 'Создано / обновлено', 'updated_at')
-                ->setWidth('160px')
-                ->setOrderable(function($query, $direction) {
-                    $query->orderBy('updated_at', $direction);
-                })
-                ->setSearchable(false),
         ];
 
         $display = AdminDisplay::datatables()
